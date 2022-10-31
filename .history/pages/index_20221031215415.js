@@ -72,7 +72,7 @@ export default function Home() {
         />
       </Head>
       <span className='email hidden md:flex fixed bottom-2 md:right-6 lg:right-16 items-center text-[.9rem]'>
-        <p className='pb-10 tracking-wider hover:text-[#9bb464] cursor-pointer'>
+        <p className='pb-10 tracking-wider hover:text-[#3b49df] cursor-pointer'>
           datnguyenftu210@gmail.com
         </p>
         <div className=' h-[100px] w-[1px] bg-white text-white'></div>
@@ -84,10 +84,10 @@ export default function Home() {
             <span className='focus-in-expand hidden md:inline'>Dat Nguyen Van</span>
           </div>
           <div className='text-sm space-x-12 nav-right hidden sm:flex md:text-base'>
-            <p onClick={scrollToHome} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>1. </span>Home</p>
-            <p onClick={scrollToAbout} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>2. </span>About</p>
-            <p onClick={scrollToSkills} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>3. </span>Skills</p>
-            <p onClick={scrollToProjects} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>4. </span>Projects</p>
+            <p onClick={scrollToHome} className="cursor-pointer"><span className='text-[#9bb464]'>1. </span>Home</p>
+            <p onClick={scrollToAbout} className="cursor-pointer">2. About</p>
+            <p onClick={scrollToSkills} className="cursor-pointer">3. Skills</p>
+            <p onClick={scrollToProjects} className="cursor-pointer">4. Projects</p>
           </div>
         </div>
         <div className='home h-[35%]'>
@@ -117,8 +117,8 @@ export default function Home() {
                 <img className='mediaIcon md:w-8 md:h-8 lg:w-10 lg:h-10' src='https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png' />
               </a>
             </div>
-            <div className='wobble-hor-bottom md:w-[150px] h-[70px] rounded-md cursor-pointer border-[1px] border-[#9bb464] text-white text-2xl hover:bg-gray-500'>
-              <p className='mx-auto w-[60%] my-auto py-2 text-[#9bb464] '>Resume</p>
+            <div className='wobble-hor-bottom md:w-[150px] h-[70px] rounded-md cursor-pointer border-[1px] border-[blue-500] text-white text-2xl hover:bg-gray-500'>
+              <p className='mx-auto w-[60%] my-auto py-2'>Resume</p>
             </div>
           </div>
         </div>

@@ -87,7 +87,7 @@ export default function Home() {
             <p onClick={scrollToHome} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>1. </span>Home</p>
             <p onClick={scrollToAbout} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>2. </span>About</p>
             <p onClick={scrollToSkills} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>3. </span>Skills</p>
-            <p onClick={scrollToProjects} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>4. </span>Projects</p>
+            <p onClick={scrollToProjects} className="cursor-pointer"><span className='text-[#9bb464]'>4. </span>Projects</p>
           </div>
         </div>
         <div className='home h-[35%]'>

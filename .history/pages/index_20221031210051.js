@@ -25,37 +25,30 @@ export default function Home() {
   const scrollToAbout = function() {
     const about = document.getElementById('about');
     const rect = about.getBoundingClientRect();
-    const bodyRect = document.body.getBoundingClientRect();
-    const offset = rect.top - bodyRect.top
-
+    bodyRect = document.body.getBoundingClientRect(),
+    console.log(rect)
+    // about.scrollIntoView({behavior: 'smooth', block: 'center'})
+    // $('html,body').animate({
+    //   scrollTop: document.getElementById('about').offset().top},
+    //   'smooth');
     window.scrollTo({
-      top: (offset - 70),
+      top: (rect.top - 70),
       left: 0,
       behavior: 'smooth'
     });
   }
 
   const scrollToSkills = function() {
-    const skills = document.getElementById('skills');
-    const rect = skills.getBoundingClientRect();
-    const bodyRect = document.body.getBoundingClientRect();
-    const offset = rect.top - bodyRect.top
-
     window.scrollTo({
-      top: (offset - 70),
+      top: 1720,
       left: 0,
       behavior: 'smooth'
     });
   }
 
   const scrollToProjects = function() {
-    const projects = document.getElementById('projects');
-    const rect = projects.getBoundingClientRect();
-    const bodyRect = document.body.getBoundingClientRect();
-    const offset = rect.top - bodyRect.top
-
     window.scrollTo({
-      top: (offset - 70),
+      top: 3130,
       left: 0,
       behavior: 'smooth'
     });
@@ -71,29 +64,29 @@ export default function Home() {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
       </Head>
-      <span className='email hidden md:flex fixed bottom-2 md:right-6 lg:right-16 items-center text-[.9rem]'>
-        <p className='pb-10 tracking-wider hover:text-[#9bb464] cursor-pointer'>
+      <span className='email fixed bottom-2 right-16 flex items-center text-[.9rem]'>
+        <p className='pb-10 tracking-wider hover:text-[#3b49df] cursor-pointer'>
           datnguyenftu210@gmail.com
         </p>
         <div className=' h-[100px] w-[1px] bg-white text-white'></div>
       </span>
       <main className='overflow-x-hidden h-screen'>
-        <div className='z-50 fixed top-0 w-screen h-[60px] md:h-[70px] backdrop-blur-sm	border-b flex space-between items-center px-4 pr-10 md:px-16 lg:px-24 nav'>
+        <div className='z-50 fixed top-0 w-screen h-[70px] backdrop-blur-sm	border-b flex space-between items-center px-24 nav'>
           <div className='flex space-x-2 nav-left'>
             <img src='logo.png' className='w-6 h-6' />
-            <span className='focus-in-expand hidden md:inline'>Dat Nguyen Van</span>
+            <span className='focus-in-expand'>Dat Nguyen Van</span>
           </div>
-          <div className='text-sm space-x-12 nav-right hidden sm:flex md:text-base'>
-            <p onClick={scrollToHome} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>1. </span>Home</p>
-            <p onClick={scrollToAbout} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>2. </span>About</p>
-            <p onClick={scrollToSkills} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>3. </span>Skills</p>
-            <p onClick={scrollToProjects} className="cursor-pointer hover:text-[#9bb464]"><span className='text-[#9bb464]'>4. </span>Projects</p>
+          <div className='flex space-x-12 nav-right'>
+            <p onClick={scrollToHome} className="cursor-pointer">1. Home</p>
+            <p onClick={scrollToAbout} className="cursor-pointer">2. About</p>
+            <p onClick={scrollToSkills} className="cursor-pointer">3. Skills</p>
+            <p onClick={scrollToProjects} className="cursor-pointer">4. Projects</p>
           </div>
         </div>
         <div className='home h-[35%]'>
-          <div className='introduction flex flex-col space-y-3 sm:text-[1.7rem]  md:text-[2.1rem] lg:text-[2.7rem] font-[900] h-[120px] ml-[8vw] mt-[20vh] md:mt-[30vh] w-auto'>
+          <div className='introduction flex flex-col space-y-3 text-[2.7rem] font-[900] h-[120px] ml-[8vw] mt-[30vh] w-auto'>
             <h1>Hi, my name is Dat</h1>
-            <h1 className='flex'>I'm a <span className='pl-2 md:pl-6 text-[#9bb464]'><Typewriter
+            <h1 className='flex'>I'm a <span className='pl-6 text-[#3b49df]'><Typewriter
               options={{
                 autoStart: true,
                 loop: true,
@@ -108,25 +101,25 @@ export default function Home() {
             </h1>
             <div className='flex space-x-10 py-5'>
               <a href='https://www.linkedin.com/in/datnguyen210/' target="_blank" rel="noopener noreferrer">
-                <img className='mediaIcon md:w-8 md:h-8 lg:w-10 lg:h-10' src='https://img.icons8.com/doodle/40/000000/linkedin--v2.png' />
+                <img className='mediaIcon' src='https://img.icons8.com/doodle/40/000000/linkedin--v2.png' />
               </a>
               <a href='https://github.com/dat-nguyen-2001' target="_blank" rel="noopener noreferrer">
-                <img className='mediaIcon md:w-8 md:h-8 lg:w-10 lg:h-10' src='https://img.icons8.com/doodle/40/000000/github--v1.png' />
+                <img className='mediaIcon' src='https://img.icons8.com/doodle/40/000000/github--v1.png' />
               </a>
               <a href='https://stackoverflow.com/users/19545617/dat-nguyen' target="_blank" rel="noopener noreferrer">
-                <img className='mediaIcon md:w-8 md:h-8 lg:w-10 lg:h-10' src='https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png' />
+                <img className='mediaIcon' src='https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png' />
               </a>
             </div>
-            <div className='wobble-hor-bottom md:w-[150px] h-[70px] rounded-md cursor-pointer border-[1px] border-[#9bb464] text-white text-2xl hover:bg-gray-500'>
-              <p className='mx-auto w-[60%] my-auto py-2 text-[#9bb464] '>Resume</p>
+            <div className='wobble-hor-bottom w-[10%] h-[70px] rounded-md cursor-pointer border-[1px] border-[blue-500] text-white text-2xl hover:bg-gray-500'>
+              <p className='mx-auto w-[60%] my-auto py-2'>Resume</p>
             </div>
           </div>
         </div>
       </main>
       <hr className='mx-40' id='about'></hr>
-      <div className='px-5 xl:px-28 mt-10'>
-        <div className='about lg:text-[2xl] xl:text-[1.3rem] flex flex-col space-y-4 mb-10'>
-          <h1  className='text-xl lg:text-2xl xl:text-3xl'><span className='lineNumber'>1 </span>&lt;<span className='text-red-700'>about</span>&gt;</h1>
+      <div className='px-28 mt-10'>
+        <div className='about text-[1.3rem] flex flex-col space-y-4 mb-10'>
+          <h1  className='text-3xl'><span className='lineNumber'>1 </span>&lt;<span className='text-red-700'>about</span>&gt;</h1>
           <div className='text-[#f9db9b]'>
             <span className='lineNumber'>2 </span><span className='text-[#9d68b2]'>const </span>
             Dat
@@ -276,13 +269,13 @@ export default function Home() {
               <span className='text-[#bd7b4c] pl-2'>&#125;</span>;
             </div>
           </div>
-          <h1 className='text-xl lg:text-2xl xl:text-3xl'><span className='lineNumber'>21 </span> &lt;/<span className='text-red-700'>about</span>&gt;</h1>
+          <h1 className='text-3xl'><span className='lineNumber'>21 </span> &lt;/<span className='text-red-700'>about</span>&gt;</h1>
         </div>
 
-        <hr id='skills' className='mx-12'></hr>
+        <hr className='mx-12'></hr>
 
-        <div className='skills lg:text-[1.2rem] xl:text-[1.3rem] flex flex-col space-y-4 my-10'>
-          <h1 className='text-xl lg:text-2xl xl:text-3xl'><span className='lineNumber'>22 </span>&lt;<span className='text-red-700'>skills</span>&gt;</h1>
+        <div className='skills text-[1.3rem] flex flex-col space-y-4 my-10'>
+          <h1 className='text-3xl'><span className='lineNumber'>22 </span>&lt;<span className='text-red-700'>skills</span>&gt;</h1>
           <div><span className='lineNumber'>23 </span><span className='text-[#f9db9b]'>Console</span>.<span className='text-[#1cbae8]'>log</span><span className='text-[#bd7b4c]'>( </span><span className='text-[#f9db9b]'>Dat</span>.<span className='text-red-500'>skills</span><span className='text-[#bd7b4c]'> )</span>;</div>
           <div className='flex'>
             <span className='lineNumber'>24 </span>
@@ -487,13 +480,13 @@ export default function Home() {
             <span className='lineNumber'>48 </span>
             <div className='pl-8'><span className='text-[#bd7b4c]'>&#125;</span>;</div>
           </div>
-          <h1 className='text-xl lg:text-2xl xl:text-3xl'><span className='lineNumber'>49 </span>&lt;/<span className='text-red-700'>skills</span>&gt;</h1>
+          <h1 className='text-3xl'><span className='lineNumber'>49 </span>&lt;/<span className='text-red-700'>skills</span>&gt;</h1>
         </div>
 
-        <hr id='projects' className='mx-12'></hr>
+        <hr className='mx-12'></hr>
 
-        <div className='projects lg:text-[1.2rem] xl:text-[1.3rem] flex flex-col space-y-4 my-10'>
-          <h1 className='text-xl lg:text-2xl xl:text-3xl'><span className='lineNumber'>50 </span>&lt;<span className='text-red-700'>projects</span>&gt;</h1>
+        <div className='projects text-[1.3rem] flex flex-col space-y-4 my-10'>
+          <h1 className='text-3xl'><span className='lineNumber'>50 </span>&lt;<span className='text-red-700'>projects</span>&gt;</h1>
           <div><span className='lineNumber'>51 </span><span className='text-[#f9db9b]'>Console</span>.<span className='text-[#1cbae8]'>log</span><span className='text-[#bd7b4c]'>( </span><span className='text-[#f9db9b]'>Dat</span>.<span className='text-red-500'>projects</span><span className='text-[#bd7b4c]'> )</span>;</div>
           <div className='flex'>
             <span className='lineNumber'>52 </span>
@@ -522,8 +515,8 @@ export default function Home() {
               :
             </div>
           </div>
-          <div className='min-w-[50vw] h-auto pl-32 pr-24'>
-            <img loading='lazy' className='rounded-sm' src='https://user-images.githubusercontent.com/94024020/197675949-07688fe5-1eb9-4f86-a30e-0c52265ba98f.png' />,
+          <div className='w-[50vw] h-auto pl-32 '>
+            <img className='rounded-sm' src='https://user-images.githubusercontent.com/94024020/197675949-07688fe5-1eb9-4f86-a30e-0c52265ba98f.png' />,
           </div>
           <div className='flex'>
             <span className='lineNumber'>56 </span>
@@ -605,8 +598,8 @@ export default function Home() {
               :
             </div>
           </div>
-          <div className='min-w-[50vw] h-auto pl-32 pr-24'>
-            <img loading='lazy' className='rounded-sm' src='https://user-images.githubusercontent.com/94024020/197683670-702d442d-dd1d-4d8d-8da8-aa7b0b72f935.png' />,
+          <div className='w-[50vw] h-auto pl-32'>
+            <img className='rounded-sm' src='https://user-images.githubusercontent.com/94024020/197683670-702d442d-dd1d-4d8d-8da8-aa7b0b72f935.png' />,
           </div>
           <div className='flex'>
             <span className='lineNumber'>68 </span>
@@ -634,7 +627,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>71 </span>
-            <div className='flex pl-24 flex-wrap'>
+            <div className='flex pl-24'>
               <span className='text-red-500'>techStack </span>
               :
               <img className='ml-4' src='https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white' />
@@ -691,8 +684,8 @@ export default function Home() {
               :
             </div>
           </div>
-          <div className='min-w-[50vw] h-auto pl-32 pr-24'>
-            <img loading='lazy' className='rounded-sm min-w-[100px] min-h-[70px]' src='https://user-images.githubusercontent.com/94024020/197679626-24a4f4f2-cb92-4e74-8144-bfe9feeca1dc.png' />,
+          <div className='w-[50vw] h-auto pl-32'>
+            <img className='rounded-sm' src='https://user-images.githubusercontent.com/94024020/197679626-24a4f4f2-cb92-4e74-8144-bfe9feeca1dc.png' />,
           </div>
           <div className='flex'>
             <span className='lineNumber'>79 </span>
@@ -720,7 +713,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>82 </span>
-            <div className='flex pl-24 flex-wrap'>
+            <div className='flex pl-24'>
               <span className='text-red-500'>techStack </span>
               :
               <img className='ml-4' src='https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB' />
@@ -758,7 +751,7 @@ export default function Home() {
             <span className='lineNumber'>86 </span>
             <div className='pl-8'><span className='text-[#bd7b4c]'>]</span></div>
           </div>
-          <h1 className='text-xl lg:text-2xl xl:text-3xl'><span className='lineNumber'>87 </span>&lt;/<span className='text-red-700'>projects</span>&gt;</h1>
+          <h1 className='text-3xl'><span className='lineNumber'>87 </span>&lt;/<span className='text-red-700'>projects</span>&gt;</h1>
         </div>
 
         <div className='text-center mt-20 mb-3'>Designed & built by Dat Nguyen Van.</div>
