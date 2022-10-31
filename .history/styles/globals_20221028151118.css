@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: cursive, Roboto Mono,-apple-system, BlinkMacSystemFont, Segoe UI,  Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --nav-load-time: 300ms;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.nav {
+  animation: nav-load var(--nav-load-time) ease-out;
+}
+
+.nav-left {
+  animation: nav-left-load 500ms ease-in var(--nav-load-time) forwards;
+  transform: translateX(-120%)
+}
+
+.nav-right {
+  animation: nav-right-load 500ms ease-in var(--nav-load-time) forwards;
+  transform: translateX(120%)
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-left-load {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-right-load {
+  0% {
+    transform: translateX(120%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.introduction {
+  
+}
+
+.mediaIcon:hover {
+  scale: 120%
+}
