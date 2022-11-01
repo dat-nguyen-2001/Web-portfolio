@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import EmailIcon from '@mui/icons-material/Email';
 import Typewriter from 'typewriter-effect';
 import 'animate.css';
 import { useEffect } from 'react';
@@ -98,7 +97,7 @@ export default function Home() {
         <div className='home'>
           <div className='introduction flex flex-col space-y-3 text-[1.3rem] sm:text-[1.7rem]  md:text-[2.1rem] lg:text-[2.7rem] font-[700] md:font-[900] h-[120px] ml-[4vw] md:ml-[8vw] mt-[50%] sm:mt-[40%] md:mt-[25%] lg:mt-[15%] w-auto'>
             <h1>Hi, my name is Dat</h1>
-            <h1 className='flex'>I'm a <span className='pl-2 md:pl-6 text-[#9bb464]'><Typewriter
+            <h1 className='flex'>I&apos;m a <span className='pl-2 md:pl-6 text-[#9bb464]'><Typewriter
               options={{
                 autoStart: true,
                 loop: true,
@@ -541,7 +540,7 @@ export default function Home() {
             <div className='pl-12 md:pl-24'>
               <span className='text-red-500'>description </span>
               :
-              <span className='text-[#9bb464]'> &#34;Mujirushi is an ecommerce site that allows customers to find and buy Muji's products&#34;</span>,
+              <span className='text-[#9bb464]'> &#34;Mujirushi is an ecommerce site that allows customers to find and buy Muji&apos;s products&#34;</span>,
             </div>
           </div>
           <div className='flex'>
