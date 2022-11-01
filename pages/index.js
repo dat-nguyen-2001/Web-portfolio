@@ -122,7 +122,7 @@ export default function Home() {
               </a>
             </div>
             <div className='text-center wobble-hor-bottom w-[100px] md:w-[150px] h-[70px] rounded-md cursor-pointer border-[1px] border-[#9bb464] text-white text-[.95rem] sm:text-base md:text-xl lg:text-2xl hover:bg-gray-500'>
-              <p className='px-auto my-auto py-2 text-[#9bb464] '>Resume</p>
+              <a href='https://drive.google.com/file/d/1-AtzyyFv_QeP881r6chFNNn0ItHyiSAo/view?fbclid=IwAR3jWBL6z2H1PfP2XJSlpXhGaPCtAqyEVZCqoWyXH6f3fAqDIq_gtVWmDc4' className='px-auto my-auto py-2 text-[#9bb464] ' target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
           </div>
         </div>
