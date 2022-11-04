@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </div>
         <div className='home flex flex-col-reverse md:flex-row w-screen pt-20 sm:pt-12 md:pt-40'>
-          <div className='introduction flex flex-col space-y-3 text-[1.3rem] sm:text-[1.7rem]  md:text-[1.85rem] lg:text-[2.3rem] font-[700] md:font-[900] h-[120px] ml-[4vw] md:ml-[6vw] w-auto mt-[10%] sm:mt-[5%] md:mt-[12%] lg:mt-[10%] xl:mt-[7%]'>
+          <div className='introduction flex flex-col space-y-3 text-[1.3rem] sm:text-[1.7rem]  md:text-[1.85rem] lg:text-[2.3rem] font-[700] md:font-[900] h-[120px] ml-[4vw] md:ml-[6vw] w-auto mt-[10%] sm:mt-[5%] md:mt-[12%]'>
             <h1>Hi, my name is Dat</h1>
             <h1 className='flex flex-wrap'>I&apos;m a <span className='pl-2 md:pl-6 text-[#9bb464]'>
               <Typewriter
@@ -126,7 +126,7 @@ export default function Home() {
               <a href='https://drive.google.com/file/d/1RxAAHuMHoRmNDIRHUPWf_AgLQPDgjeBm/view' className=' text-[#9bb464] ' target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
           </div>
-          <div className='animate__animated animate__zoomInDown animate__delay-4s profile w-[60vw] max-w-[250px] sm:w-[35vw] sm:max-w-[350px] md:w-[30vw] md:max-w-[400px] h-auto md:mr-10 lg:mr-20 xl:mr-40'>
+          <div className='profile w-[60vw] max-w-[250px] sm:w-[35vw] sm:max-w-[350px] md:w-[30vw] md:max-w-[400px] h-auto md:pr-2 lg:pr-6'>
             <img src='profile-removebg.png'/>
           </div>
         </div>

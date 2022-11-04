@@ -126,7 +126,7 @@ export default function Home() {
               <a href='https://drive.google.com/file/d/1RxAAHuMHoRmNDIRHUPWf_AgLQPDgjeBm/view' className=' text-[#9bb464] ' target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
           </div>
-          <div className='animate__animated animate__zoomInDown animate__delay-4s profile w-[60vw] max-w-[250px] sm:w-[35vw] sm:max-w-[350px] md:w-[30vw] md:max-w-[400px] h-auto md:mr-10 lg:mr-20 xl:mr-40'>
+          <div className='animate__animated animate__InDown profile w-[60vw] max-w-[250px] sm:w-[35vw] sm:max-w-[350px] md:w-[30vw] md:max-w-[400px] h-auto md:mr-10 lg:mr-20 xl:mr-40'>
             <img src='profile-removebg.png'/>
           </div>
         </div>

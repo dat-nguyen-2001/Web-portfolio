@@ -11,7 +11,7 @@ body {
   font-family: 'Poor Story', cursive; */
   font-family: 'Source Code Pro', monospace;  
   --nav-load-time: 300ms;
-
+  
   --nav-items-load-time: 500ms;
   background-color: #222;
   color: white;
@@ -61,11 +61,9 @@ a {
   opacity: 0%;
 }
 
-
 .mediaIcon:hover {
   scale: 120%
 }
-
 
 .email {
   writing-mode: vertical-lr;
@@ -288,20 +286,3 @@ a {
   }
 }
 
-
-
-
-
-
-
-@media  screen and (max-width: 767px) {
-  .profile {
-    @apply mx-auto
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .home {
-    justify-content: space-between;
-  }
-}

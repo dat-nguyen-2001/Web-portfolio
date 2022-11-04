@@ -66,6 +66,9 @@ a {
   scale: 120%
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
 
 .email {
   writing-mode: vertical-lr;

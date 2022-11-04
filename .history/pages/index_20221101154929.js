@@ -94,22 +94,21 @@ export default function Home() {
             <div className='w-[30px] h-1 bg-white rounded-md'></div>
           </div>
         </div>
-        <div className='home flex flex-col-reverse md:flex-row w-screen pt-20 sm:pt-12 md:pt-40'>
-          <div className='introduction flex flex-col space-y-3 text-[1.3rem] sm:text-[1.7rem]  md:text-[1.85rem] lg:text-[2.3rem] font-[700] md:font-[900] h-[120px] ml-[4vw] md:ml-[6vw] w-auto mt-[10%] sm:mt-[5%] md:mt-[12%] lg:mt-[10%] xl:mt-[7%]'>
+        <div className='home'>
+          <div className='introduction flex flex-col space-y-3 text-[1.3rem] sm:text-[1.7rem]  md:text-[2.1rem] lg:text-[2.7rem] font-[700] md:font-[900] h-[120px] ml-[4vw] md:ml-[8vw] mt-[50%] sm:mt-[40%] md:mt-[25%] lg:mt-[15%] w-auto'>
             <h1>Hi, my name is Dat</h1>
-            <h1 className='flex flex-wrap'>I&apos;m a <span className='pl-2 md:pl-6 text-[#9bb464]'>
-              <Typewriter
-                options={{
-                  autoStart: true,
-                  loop: true,
-                  delay: 40,
-                  strings: [
-                    "Full-Stack Developer",
-                    "Front-End Developer",
-                    "Life-Long Learner"
-                  ]
-                }}
-              /></span>
+            <h1 className='flex'>I&apos;m a <span className='pl-2 md:pl-6 text-[#9bb464]'><Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 40,
+                strings: [
+                  "Full-Stack Developer",
+                  "Front-End Developer",
+                  "Life-Long Learner"
+                ]
+              }}
+            /></span>
             </h1>
             <div className='flex space-x-5 md:space-x-10 py-5'>
               <a href='https://www.linkedin.com/in/datnguyen210/' target="_blank" rel="noopener noreferrer">
@@ -122,12 +121,9 @@ export default function Home() {
                 <img className='mediaIcon w-8 h-8 lg:w-10 lg:h-10' src='https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png' />
               </a>
             </div>
-            <div className='py-1 md:py-3 text-center wobble-hor-bottom w-[100px] md:w-[150px] h-[70px] rounded-md cursor-pointer border-[1px] border-[#9bb464] text-white text-[.95rem] sm:text-base md:text-xl lg:text-2xl hover:bg-gray-500'>
-              <a href='https://drive.google.com/file/d/1RxAAHuMHoRmNDIRHUPWf_AgLQPDgjeBm/view' className=' text-[#9bb464] ' target="_blank" rel="noopener noreferrer">Resume</a>
+            <div className='text-center wobble-hor-bottom w-[100px] md:w-[150px] h-[70px] rounded-md cursor-pointer border-[1px] border-[#9bb464] text-white text-[.95rem] sm:text-base md:text-xl lg:text-2xl hover:bg-gray-500'>
+              <a href='https://drive.google.com/file/d/1-AtzyyFv_QeP881r6chFNNn0ItHyiSAo/view?fbclid=IwAR3jWBL6z2H1PfP2XJSlpXhGaPCtAqyEVZCqoWyXH6f3fAqDIq_gtVWmDc4' className='px-auto my-auto py-2 text-[#9bb464] ' target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
-          </div>
-          <div className='animate__animated animate__zoomInDown animate__delay-4s profile w-[60vw] max-w-[250px] sm:w-[35vw] sm:max-w-[350px] md:w-[30vw] md:max-w-[400px] h-auto md:mr-10 lg:mr-20 xl:mr-40'>
-            <img src='profile-removebg.png'/>
           </div>
         </div>
       </main>
@@ -197,7 +193,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>10 </span>
-            <div className='pl-14'>
+            <div className='pl-16'>
               <span className='text-red-500'>details </span>
               :
               <span className='text-[#bd7b4c]'> [ </span>
@@ -374,7 +370,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>34 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;Nest.js&#34;,
               </span>
@@ -390,7 +386,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>36 </span>
-            <div className='pl-8 md:pl-16 '>
+            <div className='pl-8 md:pl-16'>
               <span className='text-red-500'>database</span> : <span className='text-[#9d68b2]'>[</span>
             </div>
           </div>
@@ -415,7 +411,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>39 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;MongoDB&#34;
               </span>
@@ -424,7 +420,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>40 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;Redis&#34;
               </span>
@@ -446,7 +442,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>43 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;GIT&#34;
               </span>
@@ -455,7 +451,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>44 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;Firebase&#34;
               </span>
@@ -465,7 +461,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>45 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;Socket.io&#34;
               </span>
@@ -475,7 +471,7 @@ export default function Home() {
           </div>
           <div className='flex'>
             <span className='lineNumber'>46 </span>
-            <div className='flex pl-12 md:pl-24 flex-wrap'>
+            <div className='flex pl-12 md:pl-24'>
               <span className='text-[#9bb464]'>
                 &#34;Postman&#34;
               </span>
